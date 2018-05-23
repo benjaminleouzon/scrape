@@ -1,2 +1,2 @@
-# EmailScrapper
-EmailScrapper - React
+# Email Scraper
+Email Scraper - React
