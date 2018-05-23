@@ -1,0 +1,86 @@
+.panel {
+  border: 1px solid rgba(34, 36, 38, 0.2);
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 20px;
+  box-shadow: 0px 1px 1px #e6e6e6;
+}
+
+.form {
+    position: relative;
+    max-width: 100%;
+
+    .form-field {
+      clear: both;
+      margin: 0 0 1em;
+
+      & > label {
+        display: block;
+        margin: 0 0 5px 0;
+        color: rgba(0, 0, 0, .9);
+        font-weight: 700;
+        text-transform: none;
+      }
+
+      input[type=text],
+      input[type=email] {
+        font-family: inherit;
+        margin: 0;
+        outline: 0;
+        line-height: 20px;
+        padding: 8px 12px;
+        background: #fff;
+        border: 1px solid rgba(34, 36, 38, 0.2);
+        color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        border-radius: 3px;
+        transition: all .3s ease;
+        font-size: inherit;
+
+        &:focus {
+          border: 1px solid rgba(34, 36, 38, 0.6);
+        }
+      }
+
+      .error {
+        background: red;
+        padding: 4px 8px;
+        display: inline-block;
+        margin-top: 4px;
+        border-radius: 3px;
+        color: white;
+      }
+    }
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: #e0e1e2;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all .3s ease;
+  font-size: inherit;
+
+  &:hover {
+    background: #d4d4d4;
+  }
+
+  &:focus {
+    background: #c5c5c5;
+  }
+}
