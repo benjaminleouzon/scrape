@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
@@ -8,7 +8,7 @@ import reducer from './reducers';
 
 import createHistory from 'history/createBrowserHistory';
 import { Route } from 'react-router';
-import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux';
+import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
 
 import CheckoutForm from 'containers/CheckoutForm';
 import ThankYou from 'containers/ThankYou';
